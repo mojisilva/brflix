@@ -1,0 +1,56 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;   
+ }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos base*/
+ body{
+     background: var(--preto);
+     font-family: 'Times New Roman', Times, serif;
+     color: white;
+}
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAAAAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #FFFFFF;
+}
+/*Filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)),
+    url('/resources/alto_compadecida_capa.png');
+    height:600px;
+    background-size:cover;
+    flex-direction: column;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+}
+.filme-principal .descricao{
+    margin-bottom: 90px;
+}
