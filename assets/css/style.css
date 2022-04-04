@@ -23,11 +23,8 @@ header .container{
 }
 
 
-header .logo{
-    margin-left: 5px;
-    color: var(--vermelho);
-    font-family: 'Arial Black', Times;
-    font-size: 40px;
+.container{
+    margin-left: 15px;
 }
 
 header nav a{
@@ -43,14 +40,47 @@ header nav a:hover{
 .filme-principal{
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)),
-    url('/resources/alto_compadecida_capa.png');
-    height:600px;
+    url("/resources/alto_compadecida_capa.jpg");
+    height:400px;
     background-size:cover;
     flex-direction: column;
     display: flex;
     justify-content:center;
     align-items: flex-start;
+    
 }
 .filme-principal .descricao{
-    margin-bottom: 90px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 400px;
+    padding: 5px;
+}
+.filme-principal .container{
+    width: 60%;
+}
+
+
+
+.botao{
+    background-color: rgba(0,0,0,.50) ;
+    border: none ;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 30px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.botao:hover{
+    background-color:white;
+    color: black;
+    transition: .4s ease all;
+}
+.botao i{
+    margin-right: 8px;
+}
+
+.box-filme{
+    height:100%;
+    width:100%;
+    display: block;
 }
