@@ -1,2 +1,3 @@
-# braflix
-Clone da Netflix com filmes, séries e documentário nacionais
+# BRFlix
+
+Clone da Netflix com filmes, séries e documentário nacionais.

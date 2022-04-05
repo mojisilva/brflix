@@ -5,25 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./resources/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!--owl css -->
-    <link rel="stylesheet" href="assets/css/owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl/owl.theme.default.min.css">
-    <title>BraFlix</title>
-
+    <link rel="stylesheet" href="./css/style.css">
     <!--reponsividade-->
-
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <!--swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <title>BRFlix</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="./resources/logo.png" class="logo" alt="Logo">
+            <img src="./img/logo.png" class="logo" alt="Logo">
                 <nav>
                 <a href="#">Início</a>
                 <a href="#">Filmes</a>
                 <a href="#">Séries</a>
-                <a href="#">Documentário</a>
+                <a href="#">Documentários</a>
             </nav>
         </div>
     </header>
@@ -33,7 +30,7 @@
                 <img class="logo-filme-principal" src="./resources/alto_compadecida_logo.png" alt="">
                 <p class="descricao">As aventuras dos nordestinos João Grilo, um sertanejo pobre e mentiroso, e Chicó, o mais covarde dos homens.</p>
                 <div class="botoes">
-                    <button role="button" class="botao">
+                    <button id="bt1" role="button" class="botao">
                         <i class="fa-solid fa-play"></i>
                         Assistir Agora
                     </button>
@@ -46,51 +43,27 @@
         </div>
     </main>
     
-    
-    <div class="carrosel-filmes">
+    <!--swipper carousel-->
+    <div class="carrossel-filmes">
         <h3 class="titulos-diversos">Em alta</h3>
-        <div class="owl-carousel owl-theme owl-loaded">
-                <div class="item">
-                    <img class="box-filme" src="resources/mini1.jpg" alt="" srcset="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="resources/mini2.jpg" alt="" srcset="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="resources/mini3.jpg" alt="" srcset="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="resources/mini4.jpg" alt="" srcset="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="resources/mini5.jpg" alt="" srcset="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="resources/mini6.jpg" alt="" srcset="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="resources/mini7.jpg" alt="" srcset="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="resources/mini8.jpg" alt="" srcset="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="resources/mini9.jpg" alt="" srcset="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="resources/mini10.jpg" alt="" srcset="">
-                </div>
-               
-
-
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="resources/mini1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="resources/mini1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="resources/mini3.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
         </div>
     </div>
 
 
-    
-    <script src="assets/script/owl/jquery.min.js"></script>
-    <script src="assets/script/owl/owl.carousel.min.js"></script>
+    <!--swiper script-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!--font awesome-->
     <script src="https://kit.fontawesome.com/39f8d3efd9.js" crossorigin="anonymous"></script>
-    <script src="assets/script/owl/script.js"></script>
+    <script src="/script/script.js"></script>
 </body>
 </html>
