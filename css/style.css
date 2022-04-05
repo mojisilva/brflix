@@ -2,7 +2,7 @@
     --vermelho: #E50914;
     --preto: #141414;   
     --branco: #FFFFFF;
-    --swiper-theme-color: #FFFFFF;
+    --swiper-theme-color: #F5F5F5 !important; 
     --cinza: #AAAAAA;
  }
 
@@ -17,9 +17,10 @@
      background: var(--preto);
      font-family: "Helvetica Neue",Helvetica,Arial;
      color: var(--branco);
+     position: relative;
 }
 .container{
-    margin-left: 15px;
+    margin-left: 35px;
     margin-right: 15px;
 }
 header .container{
@@ -47,7 +48,7 @@ header nav a:hover{
     align-items: flex-start;
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)),
-    url("/resources/alto_compadecida_capa.jpg");
+    url("/img/alto_compadecida_capa.jpg");
     height:400px;
     background-size:cover;
 }
@@ -89,14 +90,73 @@ header nav a:hover{
     margin-right: 8px;
 }
 
-.carrossel-filme{
-    margin-top: 5px;
-    overflow: hidden;
+/*carrossel de filmes*/
+
+.carrossel{
+    cursor: pointer;
+    margin-left: 35px;
 }
 .titulos-diversos{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;;
     margin-left: 15px;
     font-size: 20px;
     font-family: "Helvetica Neue",Helvetica,Arial;
+}
+
+/*swiper*/
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-button-prev{
+    color: var(--swiper-theme-color);
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carrossel img{
+    max-width: 100%;
+    height: auto;
+}
+.carrossel .swiper-wrapper{
+    padding: 20px;
+}
+.carrossel .swiper-slide{
+    transition: 250ms all;
+}
+.carrossel .swiper-slide:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+.carrossel .swiper-slide:first-child:hover{
+    margin: 0 30px;
+}
+.carrossel-filme .swiper-slide:last-child:hover{
+    margin: 0 -30px;
+}
+.carrossel-filme .swiper-slide:nth-child(5):hover{
+    margin: 0 -30px;
 }
