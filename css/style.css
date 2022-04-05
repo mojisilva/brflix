@@ -47,10 +47,11 @@ header nav a:hover{
     justify-content: center;
     align-items: flex-start;
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)),
-    url("/img/alto_compadecida_capa.jpg");
-    height:400px;
+    background-image: url("/img/alto_compadecida_capa.jpg");
+    background-color: transparent;
     background-size:cover;
+    height:400px;
+    
 }
 .filme-principal .descricao{
     margin-top: 10px;
@@ -113,7 +114,7 @@ header nav a:hover{
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #000000;
+    background: var(--preto);
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -127,10 +128,6 @@ header nav a:hover{
     -webkit-align-items: center;
     align-items: center;
 }
-.swiper-button-prev{
-    color: var(--swiper-theme-color);
-}
-
 .swiper-slide img {
     display: block;
     width: 100%;
