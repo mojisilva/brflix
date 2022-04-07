@@ -47,7 +47,7 @@ header nav a:hover{
     justify-content: center;
     align-items: flex-start;
     font-size: 16px;
-    background-image: url(/img/alto_compadecida_capa.jpg);
+    background-image: url(../img/alto_compadecida_capa.jpg);
     background-color: transparent;
     background-size:cover;
     height:400px;
