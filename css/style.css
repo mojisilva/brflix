@@ -127,11 +127,10 @@ header nav a:hover{
     -webkit-align-items: center;
     align-items: center;
 }
-.swiper-slide img {
+.swiper-slide img{
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 .carrossel img{
     max-width: 100%;
