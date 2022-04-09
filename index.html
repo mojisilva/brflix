@@ -27,16 +27,16 @@
     <main>
         <div class="filme-principal">
             <div class="container-filme">
-                <img class="logo-filme-principal" src="img/alto_compadecida_logo.png" alt="">
+                <img class="logo-filme-principal" src="img/auto_compadecida_logo.png" alt="">
                 <p class="descricao">As aventuras dos nordestinos João Grilo, um sertanejo pobre e mentiroso, e Chicó, o mais covarde dos homens.</p>
                 <div class="botoes">
                     <a href="https://www.youtube.com/watch?v=JoOBXd0BrIk" target="_blank">
-                    <button id="bt1" role="button" class="botao">
+                    <button id="btn-assistir" role="button" class="botao">
                         <i class="fa-solid fa-play"></i>
-                        Assistir Agora
+                        Assistir
                     </a>
                     </button>
-                    <button  type="submit" role="button" class="botao">
+                    <button id="btn-info" type="submit" role="button" class="botao">
                         <i class="fa-solid fa-circle-info"></i>
                         Mais Informações
                     </button>
@@ -50,7 +50,7 @@
             <h3 class="titulos-diversos">Em alta</h3>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="img/mini1.png" alt=""></div>
+                    <div id="first" class="swiper-slide"><img src="img/mini1.png" alt=""></div>
                     <div class="swiper-slide"><img src="img/mini2.png" alt=""></div>
                     <div class="swiper-slide"><img src="img/mini3.png" alt=""></div>
                     <div class="swiper-slide"><img src="img/mini4.png" alt=""></div>
@@ -59,7 +59,7 @@
                     <div class="swiper-slide"><img src="img/mini7.jpg" alt=""></div>
                     <div class="swiper-slide"><img src="img/mini8.jpg" alt=""></div>
                     <div class="swiper-slide"><img src="img/mini9.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/mini10.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/mini10.png" alt=""></div>
                     <div class="swiper-slide"><img src="img/mini11.jpg" alt=""></div>
                     <div class="swiper-slide"><img src="img/mini12.jpg" alt=""></div>
                     <div class="swiper-slide"><img src="img/mini13.jpg" alt=""></div>
@@ -119,8 +119,43 @@
             <div class="swiper-button-next"></div>
         </div>
     </div>
-    <div id="popup" class="popup-container">
 
+
+
+
+
+
+
+
+
+
+    <div id="popup" class="popup-container">
+        <div class="modal">            
+            <img width="800" height="300" src="img/auto_compadecida_popup.png" alt="auto_compadecida_popup">
+            <button id="btn-close" class="close">
+                <i class="fa-solid fa-x"></i>
+            </button>
+            <div class="botoes-popup">
+                <a href="https://www.youtube.com/watch?v=JoOBXd0BrIk" target="_blank">
+                <button id="btn-assistir" role="button" class="botao">
+                    <i class="fa-solid fa-play"></i>
+                    Assistir
+                </a>
+                </button>
+                <button id="list" class="icones">
+                    <i id="i-list" class="fa-solid fa-plus"></i>
+                </button>
+                <button id="like" class="icones">
+                    <i id="i-like" class="fa-solid fa-thumbs-up"></i>
+                </button>
+                <button id="deslike" class="icones">
+                    <i id="i-deslike" class="fa-solid fa-thumbs-down"></i>
+                </button>
+                <button id="volume" class="icone-direita">
+                        <i id="i-volume" class="fa-solid fa-volume-high"></i>
+                </button>
+            </div>
+        </div>
     </div>
 
 
@@ -130,6 +165,6 @@
     <!--font awesome-->
     <script src="https://kit.fontawesome.com/39f8d3efd9.js" crossorigin="anonymous"></script>
     <script src="script/swiper/script.js"></script>
-    <script src="script/swiper/scroll.js"></script>
+    <script src="script/swiper/main.js"></script>
 </body>
 </html>
