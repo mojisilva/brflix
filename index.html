@@ -26,13 +26,15 @@
     </header>
     <main>
         <div class="filme-principal">
-            <div class="container">
-                <img class="logo-filme-principal" src="/img/alto_compadecida_logo.png" alt="">
+            <div class="container-filme">
+                <img class="logo-filme-principal" src="img/alto_compadecida_logo.png" alt="">
                 <p class="descricao">As aventuras dos nordestinos João Grilo, um sertanejo pobre e mentiroso, e Chicó, o mais covarde dos homens.</p>
                 <div class="botoes">
+                    <a href="https://www.youtube.com/watch?v=JoOBXd0BrIk" target="_blank">
                     <button id="bt1" role="button" class="botao">
                         <i class="fa-solid fa-play"></i>
                         Assistir Agora
+                    </a>
                     </button>
                     <button  type="submit" role="button" class="botao">
                         <i class="fa-solid fa-circle-info"></i>
@@ -44,31 +46,30 @@
     </main>
     
     <!--swipper carousel-->
-    <div class="carrossel">
-        <h3 class="titulos-diversos">Em alta</h3>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="img/mini1.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/mini2.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/mini3.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/mini4.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/mini5.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/mini6.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/mini7.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/mini8.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/mini9.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/mini10.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/mini11.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/mini12.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/mini13.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/mini14.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/mini15.jpg" alt=""></div>
+        <div class="carrossel">
+            <h3 class="titulos-diversos">Em alta</h3>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/mini1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/mini2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/mini3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/mini4.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/mini5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/mini6.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/mini7.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/mini8.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/mini9.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/mini10.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/mini11.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/mini12.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/mini13.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/mini14.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/mini15.jpg" alt=""></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
         </div>
-    </div>
-
     <div class="carrossel">
         <h3 class="titulos-diversos">Populares na BRFlix</h3>
         <div class="swiper mySwiper">
@@ -118,10 +119,17 @@
             <div class="swiper-button-next"></div>
         </div>
     </div>
+    <div id="popup" class="popup-container">
+
+    </div>
+
+
+
     <!--swiper script-->
     <script src="script/swiper/swipper-bundle.min.js"></script>
     <!--font awesome-->
     <script src="https://kit.fontawesome.com/39f8d3efd9.js" crossorigin="anonymous"></script>
     <script src="script/swiper/script.js"></script>
+    <script src="script/swiper/scroll.js"></script>
 </body>
 </html>
