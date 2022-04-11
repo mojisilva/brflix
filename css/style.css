@@ -1,29 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;600&display=swap');
+
+/*Elementos base*/
+
 :root{
     --vermelho: #D81F26;
     --preto: #141414;   
     --branco: #FFFFFF;
     --swiper-theme-color: #F5F5F5 !important; 
     --cinza: #808080 !important;
+    --verde: #49B675;
+    --amarelo: #FFCE00;
     --cinza-claro: #DCDCDC !important;
  }
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*Elementos base*/
- body{
+body{
      background: var(--preto);
      font-family: "Helvetica Neue",Helvetica,Arial;
      color: var(--branco);
      position: relative;
 }
-.container{
-    display: flex;
-    align-items: center;
-}
+
+/*Navbar*/
+
 header{
     position: fixed;
     top: 0;
@@ -36,11 +39,12 @@ header{
     z-index: 100000;
     background-image: linear-gradient(to bottom, #000000, transparent);
 }
+
 header.container{
     background: var(--preto);
-    transition: 0.6s;   
-    
+    transition: 0.6s;      
 }
+
 header nav a{
     font-size: 14px;
     text-decoration: none;
@@ -48,16 +52,22 @@ header nav a{
     margin-right: 10px;
     margin-left: 30px;
 }
+
 header nav a:hover{
     color: var(--branco);
     font-weight: bold;
 }
 
+.container{
+    display: flex;
+    align-items: center;
+}
+
 /*Filme principal*/
+
 .container-filme{
     margin-left: 20px;
 }
-
 
 .filme-principal{
     display: flex;
@@ -66,6 +76,7 @@ header nav a:hover{
     align-items: flex-start;
     font-size: 16px;
     background: url(../img/auto_compadecida_capa.jpg);
+    box-shadow: 0px 0px 10px 3px var(--preto) inset;
     background-size:cover;
     height:500px;
 }
@@ -80,10 +91,13 @@ header nav a:hover{
     margin-bottom: 40px;
     padding: 5px;
 }
+
 .filme-principal.container-filme{
     width: 60%;
 }
+
 /*botões do filme principal*/
+
 .botao{
     background-color:var(--cinza);
     border: none ;
@@ -95,6 +109,7 @@ header nav a:hover{
     cursor: pointer;
     border-radius: 4%;
 }
+
 .botao:hover{    
     transition: .4s ease all;
     background-color: rgba(169,169,169,.50) ;
@@ -104,13 +119,16 @@ header nav a:hover{
     background-color: var(--branco);
     color: var(--preto);
 }
+
 #btn-assistir i{
     color: var(--preto);
 }
+
 #btn-assistir:hover{
     background-color: var(--cinza-claro);
     transition: .4s ease all;
 }
+
 .botao i{
     margin-right: 8px;
 }
@@ -120,6 +138,7 @@ header nav a:hover{
 .carrossel{
     cursor: pointer;
 }
+
 .titulos-diversos{
     margin-top: 20px;
     margin-left: 20px;
@@ -127,7 +146,7 @@ header nav a:hover{
     font-family: "Helvetica Neue",Helvetica,Arial;
 }
 
-/*swiper*/
+/*swiper carrossel*/
 
 .swiper {
     width: 100%;
@@ -149,143 +168,42 @@ header nav a:hover{
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-    align-items: center;
-    
+    align-items: center;    
 }
+
 .swiper-slide img{
     display: block;
     width: 100%;
     height: 100%;
     border-radius: 3%;
 }
+
 .carrossel img{
     max-width: 100%;
     height: auto;
 }
+
 .carrossel .swiper-wrapper{
     padding: 20px;
 }
+
 .carrossel .swiper-slide{
     transition: 250ms all;
 }
+
 .carrossel .swiper-slide:hover{
     transform: scale(1.2);
     z-index: 1;
 }
+
 .carrossel .swiper-slide:first-child:hover{
     margin: 0 30px;
 }
+
 .carrossel-filme .swiper-slide:last-child:hover{
     margin: 0 -30px;
 }
+
 .carrossel-filme .swiper-slide:nth-child(5):hover{
     margin: 0 -30px;
-}
-
-
-
-.swiper-button-prev:hover{
-    font-weight: bold;    
-    background: rgba(0,0,0,.50);    
-    height:100%;
-    top: 15%;
-    
-}
-
-.swiper-button-next:hover{
-    font-weight: bold;    
-    background: rgba(0,0,0,.50);    
-    height:100%;
-    top: 15%;
-}
-
-/*----------------------------Mais informações---------------------------*/
-.popup-container{
-    position: fixed;
-    top: 5%;
-    left: 20%;
-    width: 800px;
-    height: 600px;
-    border: 1px solid var(--branco);
-    display: none;
-    background: rgba(0,0,0,.5);
-    z-index: 2000;
-    border-radius: 1%;
-    border: none;
-
-}
-.modal img{
-    z-index: 2000;
-}
-
-.popup-container .botoes-popup{
-    display: flex;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-
-.botoes-popup a{
-    text-decoration: none;
-    color: var(--preto);
-}
-.icones{
-    border: 2px solid var(--cinza);
-    background-color: var(--preto);
-    font-size: 20px;
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    cursor: pointer;
-}
-.botoes-popup i{
-    text-decoration: none;
-    color: var(--cinza);
-}
-
-#i-like{
-    color: var(--cinza);
-}
-.icone-direita{
-    border: 2px solid var(--cinza);
-    background-color: var(--preto);
-    font-size: 20px;
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    margin-left: 410px;
-    cursor: pointer;
-}
-.close{
-    right: 1%;
-    width: 40px;
-    height: 40px;
-    top: 1%;
-    z-index: 1000;
-    position: absolute;
-    border-radius: 100%;
-    background-color: var(--preto);
-    color: var(--branco);
-    border:none;
-    cursor: pointer;
-}
-.close p{
-    font-size: 20px;
-}
-
-.mostrar.popup-container{
-    display: flex;
-}
-@keyframes modal{
-    from {
-        opacity: 0;
-        transform: translate3d(0,-60px,0);
-    }
-    to{
-        opacity: 1;
-        transform: translate3d(0,0,0);
-    }
-}
-.mostrar.modal{
-    animation: modal .3s
 }
