@@ -189,6 +189,7 @@ header nav a:hover{
 
 .carrossel .swiper-slide{
     transition: 250ms all;
+    
 }
 
 .carrossel .swiper-slide:hover{
@@ -201,7 +202,7 @@ header nav a:hover{
 }
 
 .carrossel-filme .swiper-slide:last-child:hover{
-    margin: 0 -30px;
+    margin: 0 -40px;
 }
 
 .carrossel-filme .swiper-slide:nth-child(5):hover{
