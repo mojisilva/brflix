@@ -11,7 +11,7 @@
     --cinza-claro: #DCDCDC !important;
  }
 
- .popup-container{
+ .modal-container{
     position: fixed;
     top: 5%;
     left: 20%;
@@ -27,7 +27,7 @@
 
 /*parte principal: botões, imagens e logo*/
 
- .imagem-popup{
+ .imagem-modal{
     background: rgba(0, 0, 0, 0.4)  url(../img/auto_compadecida_popup.png);
     width: 800px;
     height: 280px;
@@ -36,14 +36,14 @@
     box-shadow: 0px 0px 10px 3px var(--preto) inset;
 }
 
-.logo-popup{
+.logo-modal{
     position: relative;
     z-index: 1;
     top: 45%;
     margin-left: 20px;
 }
 
-.popup-container .botoes-popup{
+.modal-container .botoes-modal{
     display: flex;
     margin-top: 10px;
     margin-left: 20px;
@@ -52,7 +52,7 @@
     top: 35%;
 }
 
-.botoes-popup a{
+.botoes-modal a{
     text-decoration: none;
     color: var(--preto);
 }
@@ -74,12 +74,12 @@
     color: var(--preto);
 }
 
-.botoes-popup i{
+.botoes-modal i{
     text-decoration: none;
     color: var(--cinza);
 }
 
-.botoes-popup i:hover{
+.botoes-modal i:hover{
     color: var(--preto)
 }
 
@@ -132,11 +132,11 @@
     font-size: 20px;
 }
 
-.mostrar.popup-container{
+.mostrar.modal-container{
     display: flex;
 }
 
-@keyframes modal{
+@keyframes modal1{
     from {
         opacity: 0;
         transform: translate3d(0,-60px,0);
@@ -148,10 +148,10 @@
 }
 
 .mostrar.modal{
-    animation: modal .3s
+    animation: modal1 .3s
 }
 
-.botao-assistir-popup{
+.botao-assistir-modal{
     background-color:var(--cinza);
     border: none ;
     color: var(--branco);
@@ -165,7 +165,7 @@
 
 /*parte de informações*/
 
-.informacao-popup{
+.informacao-modal{
     width: 95%;
     margin-left: 20px;
     display: flex;
@@ -217,7 +217,7 @@
     justify-content: space-around;
 }
 
-.descricao-popup{
+.descricao-modal{
     position: absolute;
     display: flex;
     flex-direction: row;

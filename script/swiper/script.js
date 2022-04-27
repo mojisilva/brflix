@@ -3,29 +3,29 @@ window.addEventListener('scroll', function(){
     header.classList.toggle("container", window.scrollY >0)
   })
 
-function popUp(){
-  showPopup();
+function modal(){
+  showModal();
   volume();
   likedDesliked();
   addList();
-  closePopup();
+  closeModal();
 }
 
-function showPopup(){
+function showModal(){
   const btnInfo = document.getElementById('btn-info');
-  const popUp = document.getElementById('popup');
+  const modal = document.getElementById('modal');
 
   btnInfo.addEventListener('click', () => {
-      popUp.classList.add('mostrar')
+      modal.classList.add('mostrar')
   });
 }
 
-function closePopup(){
+function closeModal(){
   const btnClose = document.getElementById('btn-close');
-  const popUp = document.getElementById('popup');
+  const modal = document.getElementById('modal');
 
   btnClose.addEventListener('click', () => {
-      popUp.classList.remove('mostrar')
+      modal.classList.remove('mostrar')
   });
 }
 
@@ -79,4 +79,4 @@ function volume(){
   });
 }
 
-popUp();
+modal();
