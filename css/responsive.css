@@ -23,7 +23,7 @@
         height: 100%;
         object-fit: cover;
     }
-    /*pop-up: imagem, botões e logo*/
+    /*modal: imagem, botões e logo*/
 
     .popup-container{
         display: none;
@@ -33,12 +33,12 @@
         left: 0%;        
     }
 
-    .modal .logo-popup{
+    .modal .logo-modal{
         width: 150px;
         top: 40%;
     }
 
-    .modal .botoes-popup{
+    .modal .botoes-modal{
         position: absolute;
         flex-direction: row;
         z-index: 1000;
@@ -50,7 +50,7 @@
         z-index: 1;
         left: 0%;
     }
-    .botao-assistir-popup{
+    .botao-assistir-modal{
        height: 40px;
        width: 130px;
     }         
@@ -62,7 +62,7 @@
 
     /*informações do filme*/
 
-    .informacao-popup{
+    .informacao-modal{
         display: flex;
         width: 90%;
     }
@@ -81,7 +81,7 @@
         line-height: normal;
         font-size: 16px;        
     }
-    .descricao-popup{
+    .descricao-modal{
         width: 90%;
         
     }
